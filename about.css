@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.header {
+  display: none;
+}
+.self-description {
+  display: none;
+}
+.about {
+  height: 100vh;
+  background: url(images/background.jfif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+header nav {
+  display: none;
+  background-color: rgba(20, 69, 90, 0.8);
+  padding: 5px;
+  z-index: 999;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header input {
+  display: none;
+}
+header label {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: white;
+}
+.close-nav {
+  color: black;
+  font-size: 48px;
+  font-weight: bold;
+  top: -5px;
+  display: none;
+}
+label img {
+  width: 40px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+#toggle:checked ~ nav {
+  display: block;
+}
+#toggle:checked ~ .open-nav {
+  display: none;
+}
+#toggle:checked ~ .close-nav {
+  display: block;
+}
+
+header ul {
+  padding: 20px 0 5px 10px;
+}
+
+header li {
+  border-bottom: 1px solid black;
+  list-style: none;
+  margin: 30px 0 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  header label img {
+    width: 70px;
+    height: 50px;
+  }
+  header li {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: rgb(142, 161, 136);
+  }
+  header {
+    all: unset;
+    display: none;
+  }
+  .self-description {
+    display: block;
+  }
+
+  .header {
+    display: block;
+
+    color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(31, 45, 59);
+    z-index: 9;
+    width: 100%;
+    position: fixed;
+  }
+  .header h1 {
+    display: inline;
+    border-radius: 50%;
+    color: sandybrown;
+    font-family: cursive;
+  }
+  .header p {
+    display: inline-block;
+    font-family: cursive;
+    color: rgb(226, 100, 100);
+    text-shadow: 1px 1px 2px;
+  }
+
+  .header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 10px;
+  }
+  .header ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .header ul a:hover {
+    color: skyblue;
+    border-bottom: 1px solid skyblue;
+  }
+  .self {
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+  }
+  .self > h1 {
+    text-align: center;
+    margin: 10px 0 20px 0;
+    padding: 5px;
+    background-color: rgb(191, 201, 189);
+    border-radius: 10px;
+    font-family: cursive;
+  }
+  .contact a {
+    color: black;
+    font-size: 40px;
+    margin: 10px;
+  }
+  .myself {
+    background-color: rgb(230, 223, 214);
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 30px;
+  }
+  .education {
+    background-color: rgb(230, 223, 214);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+  }
+  .education > h1 {
+    border-bottom: 2px solid black;
+  }
+  .contact-no {
+    background-color: rgb(230, 223, 214);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-no > h1 {
+    border-bottom: 2px solid black;
+  }
+  .contact-no1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .contact-no p {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .about-flex {
+    display: flex;
+  }
+  .about-flex div {
+    width: 50%;
+    margin: 20px;
+  }
+}

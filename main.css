@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background: linear-gradient(#334c55, #18121e);
+}
+
+header nav {
+  display: none;
+}
+header div {
+  background-color:rgb(26,23,35);
+  padding: 10px;
+}
+header h1 {
+  display: inline;
+  border-radius: 50%;
+  color: sandybrown;
+  margin: 10px;
+  margin-right: 0px;
+}
+header p {
+  display: inline-block;
+  font-family: cursive;
+  color: rgb(226, 100, 100);
+  text-shadow: 1px 1px 2px;
+}
+.main {
+  background: linear-gradient(#18121e, #334c55);
+}
+.profile img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.profile {
+  text-align: center;
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 2rem;
+}
+.profile h1 {
+  text-align: left;
+  color: whitesmoke;
+  font-size: 2.2rem;
+}
+.profile span {
+  color: rgb(214, 37, 90);
+}
+
+.icon {
+  padding: 10px;
+  text-align: center;
+  margin: 20px 20px 30px 20px;
+  border-radius: 15px;
+}
+.icon a {
+  margin: 10px;
+  color: black;
+  font-size: 40px;
+}
+.icon div {
+  background-color: rgba(209, 242, 243, 0.7);
+  border-radius: 10px;
+  margin-top: 8px;
+}
+.icon .See-more {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  margin: 20px;
+  width: 80%;
+  font-size: 20px;
+  font-weight: bold;
+}
+.icon h1 {
+  color: white;
+}
+.icon p {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.copyright {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  .bar {
+    height: 30px;
+  }
+  .bar span {
+    height: 30px;
+  }
+  .icon a {
+    margin: 20px;
+  }
+  .icon .See-more {
+    width: 30%;
+  }
+  .icon div {
+    width: 70%;
+    position: relative;
+    left: 16%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header div {
+  background-color:rgb(31,45,59);
+  padding: 0px;
+}
+  header {
+    display: block;
+    color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(31, 45, 59);
+    z-index: 9;
+    width: 100%;
+    position: fixed;
+  }
+  header nav {
+    display: block;
+  }
+  header h1 {
+    display: inline;
+    border-radius: 50%;
+    color: sandybrown;
+    font-family: cursive;
+  }
+  header p {
+    display: inline-block;
+    font-family: cursive;
+    color: rgb(226, 100, 100);
+    text-shadow: 1px 1px 2px;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 10px;
+  }
+  header ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  header ul a:hover {
+    color: skyblue;
+    border-bottom: 1px solid skyblue;
+  }
+  .profile {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .profile img {
+    border-radius: 10%;
+    height: 400px;
+    width: 400px;
+  }
+  .icon p {
+    display: none;
+  }
+  .icon .See-more {
+    display: none;
+  }
+  .icon div {
+    background-color: #465f68;
+    left: 3%;
+    margin-top: -200px;
+    width: 45%;
+  }
+  .icon a {
+    color: rgb(9, 8, 17);
+  }
+  .icon h1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  header nav {
+    display: block;
+  }
+  .icon div {
+    width: 30%;
+    left: 10%;
+    margin-top: -250px;
+  }
+}
